@@ -340,7 +340,7 @@ const reportPrice = (e) => {
   postData('https://palive-api.herokuapp.com/api/reports/' + e.target.dataset.priceId)
         .then((response) => {
           switch(response?.status){
-            case 200:
+            case 201:
               {
                 alert("Pomyślnie zgłoszono cenę");
                 break;
