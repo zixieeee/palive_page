@@ -1,0 +1,71 @@
+/*1601-1920px*/
+@media screen and (max-width: 1920px) {
+
+}
+
+@media screen and (max-width: 1600px) {
+    
+}
+
+@media screen and (max-width: 1368px) {
+    .offer_bg{
+        font-size: 200px;
+    }
+    .offer_title{
+        margin-left: 48px;
+        margin-top: 85px;
+    }
+    .next{
+        font-size: 210px;
+        width: 247px;
+        position: absolute;
+        right: 0;
+        line-height: 0.7em;
+        top: 50%;
+        margin-top: -157px;
+        text-shadow: 17px 15px 0 #0309a1;
+    }
+    .service_index {
+        font-family: 'Jaapokkisubtract', sans-serif;
+        font-size: 18px;
+        color: #a6a6e4;
+        position: absolute;
+        left: -32px;
+        top: 30px;
+    }
+    .service_title {
+        font-size: 19px;
+        margin-top: 50px;
+    }
+    
+element.style {
+}
+.icon {
+    font-family: 'Stroke-Gap-Icons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.service_icon {
+    font-size: 35px;
+    margin-bottom: 45px;
+    display: block;
+}
+}
+
+@media screen and (max-width: 960px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+/* 320-480 */
+@media screen and (max-width: 480px) {
+    
+}

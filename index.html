@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, use-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+        <title>PALIVE</title>
+        <link rel="stylesheet" href="./css/style.css" type="text/css">
+        <link rel="icon" href="./img/title.jpg" sizes="16x16" type="image/png">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/stroke-gap-icons.css">
+        <link rel="stylesheet" href="css/media.css">
+
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script src="https://kit.fontawesome.com/3563df87fc.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="main_container">
+            <div id="menu_bar">
+                <a href=""><img src="./img/SPOILER_unknown.png" alt="logo.png" class="header_img" onclick="startup_fun()"></a>
+                <span class="menu_btn" id="user_name" style="display: none;"></span>
+                <a href="#" class="menu_btn" onclick="login_fun()" id="login_btn"><span id="login">ZALOGUJ SIĘ</span></a>
+                <a href="#" class="menu_btn" id="find_btn" onclick="find_fun()"><span id="search">ZNAJDŹ STACJĘ</span></a>
+                <a href="#" class="menu_btn" id="contact_btn" onclick="contact_fun()"><span id="contact">KONTAKT</span></a>
+                <button class="menu_btn" id="logout_btn" style="display: none;">WYLOGUJ SIĘ</button>
+            </div>
+            <div id="info_window">
+                <form id="login-form">
+                    <input type="email" class="login_input" id="email" placeholder="LOGIN">
+                    <input type="password" class="login_input" id="password" placeholder="HASŁO">
+                    <div class="buttons">
+                        <input type="button" value="REJESTRACJA" id="registration_btn" class="secondary_login_btn">
+                        <button type="submit" id="login_btn" class="secondary_login_btn">ZALOGUJ SIĘ</button>
+                    </div>
+                    <span id="login_via">ZALOGUJ SIĘ ZA POMOCĄ</span>
+                    <div class="login_via_buttons">
+                        <img src="./img/facebook_logo.png" alt="" class="login_via" id="login_via_facebook">
+                        <img src="./img/google_logo.png" alt="" class="login_via" id="login_via_google">
+                    </div>
+                </form>
+
+                <div id="find_station_container">
+                    <div id="find_toolbar">
+                        <div id="location-text" class="find_station_input find_station_text">UDOSTĘPNIJ LOKALIZACJĘ</div>
+                        <input type="button" value="ZNAJDŹ MNIE" id="find-me" class="find_station_input find_station_btn">
+                    </div>
+
+                    <table id="stations_container">
+                    </table>
+                </div>
+
+                <div id="contact_container">
+                    <div class="contact_info">
+                        <span class="contact_text">PALIVE DEVELOPER TEAM</span>
+                        <span class="contact_text">Częstochowa, 42-200</span>
+                        <span class="contact_text">Ul. J.H. Dąbrowskiego</span>
+                        <span class="contact_text">Tel. +48 123 456 789</span>
+                        <span class="contact_text">2022 © All rights reserved</span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        <section class="popup_1" id="popup_1">
+            <a href="#popup_closer" class="popup1__area"></a>
+            <div class="popup_closer" id="popup_closer"></div>
+            <div class="popup1__body">
+                <div class="popup1__content">
+                    <a href="#popup_closer" class="popup1__close">X</a>
+                    <div id="popup_content">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="module" src="js/index.js"></script>
+    <script type="module" src="js/login.js"></script>
+</html>
